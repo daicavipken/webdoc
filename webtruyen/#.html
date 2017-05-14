@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" type="image/png" href="img/Weather_CloudThunder.png">
+	<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css" type="text/css">
+	<title>Đọc truyện online mới và hay nhất</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="header" class="w3-top" >
+		<ul class="w3-navbar w3-large w3-left-align navbar">
+		<li class="w3-hide-medium w3-hide-large w3-opennav w3-right nav-icon">
+			<a href="javascript:void(0);" onclick="collapseNav()" rel="nofollow">
+				<i class="fa fa-navicon"></i>
+			</a>
+		</li>
+		<li id="logo">
+			<h1>
+				<a href="#.html" title="Đọc truyện online hay và mới nhất">
+					<img src="img/logo.png" width="40" height="40" alt="Đọc truyện">
+					<span class="w3-hide-large w3-hide-medium ">Webtruyen.com</span>
+				</a>
+			</h1>
+		</li>
+		<li class="w3-hide-small w3-dropdown-hover">
+			<a href="javascript:void();" title="Menu thể loại" rel="nofollow">
+				<i class="fa fa-navicon"></i>
+				Thể loại
+			</a>
+			<div class="w3-row w3-dropdown-content w3-card-2 navbar-dropdown">
+				<a class="w3-col s6 m6 l6" title="Truyện Tiên hiệp" href="http://webtruyen.com/tien-hiep/"><i class="fa fa-tags"></i> Tiên Hiệp</a>
+				<a class="w3-col s6 m6 l6" title="Truyện Kiếm hiệp" href="http://webtruyen.com/kiem-hiep/"><i class="fa fa-tags"></i> Kiếm Hiệp</a>
+				<a class="w3-col s6 m6 l6" title="Truyện Ngôn tình" href="http://webtruyen.com/ngon-tinh/"><i class="fa fa-tags"></i> Ngôn Tình</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/truyen-teen/" title="Truyện Teen"><i class="fa fa-tags"></i> Truyện Teen</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/do-thi/" title="Truyện Đô Thị"><i class="fa fa-tags"></i> Đô Thị</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/quan-su/" title="Truyện Quân sự"><i class="fa fa-tags"></i> Quân Sự</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/lich-su/" title="Truyện Lịch sử"><i class="fa fa-tags"></i> Lịch Sử</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/xuyen-khong/" title="Truyện Xuyên Không"><i class="fa fa-tags"></i> Xuyên Không</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/truyen-ma/" title="Truyện ma"><i class="fa fa-tags"></i> Truyện Ma</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/truyen-trinh-tham/" title="Truyện trinh thám"><i class="fa fa-tags"></i> Trinh Thám</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/huyen-huyen/" title="Truyện Huyền Huyễn"><i class="fa fa-tags"></i> Huyền Huyễn</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/khoa-huyen/" title="Truyện Khoa Huyễn"><i class="fa fa-tags"></i> Khoa Huyễn</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/di-gioi/" title="Truyện Dị Giới"><i class="fa fa-tags"></i> Dị Giới</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/vong-du/" title="Truyện Võng Du"><i class="fa fa-tags"></i> Võng Du</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/truyen-ngan/" title="Truyện Ngắn"><i class="fa fa-tags"></i> Truyện Ngắn</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/truyen-cuoi/" title="Truyện Cười"><i class="fa fa-tags"></i> Truyện Cười</a>
+				<a class="w3-col s6 m6 l6" href="http://webtruyen.com/tieu-thuyet/" title="Truyện Tiểu Thuyết"><i class="fa fa-tags"></i> Tiểu Thuyết</a>
+			</div>
+		</li>
+		<li class="w3-hide-small w3-dropdown-hover">
+			<a href="javascript:void();" title="Menu Sắp xếp" rel="nofollow">
+				<i class="fa fa-sort"></i>
+				Sắp xếp
+			</a>
+			<div class="w3-dropdown-content w3-card-2 navbar-dropdown">
+				<a class="w3-col s6" href="http://webtruyen.com/all/" title="Truyện Mới Cập Nhật"><i class="fa fa-refresh"></i> Mới Cập Nhật</a>
+				<a class="w3-col s6" href="http://webtruyen.com/truyen-moi-dang/" title="Truyện mới Đăng"><i class="fa fa-cloud-upload"></i> Mới Đăng</a>
+				<a class="w3-col s6" href="http://webtruyen.com/truyen-duoc-xem-nhieu-nhat/" title="Truyện đọc nhiều"><i class="fa fa-eye"></i> Xem Nhiều</a>
+				<a class="w3-col s6" href="http://webtruyen.com/truyen-duoc-yeu-thich-nhat/" title="Truyện được yêu thích"><i class="fa fa-thumbs-o-up"></i> Yêu Thích</a>
+				<a class="w3-col s6" href="http://webtruyen.com/truyen-full/" title="Truyện Full"><i class="fa fa-signal"></i> Truyện Full</a>
+			</div>
+		</li>
+		<!-- SEARCH BOX -->
+		<li class="w3-hide-small navbar-search">
+			<form class="search-bar" method="get" action="http://webtruyen.com/home/action_search">
+				<input type="w3-input search-bar-input" name="key" type="text" onkeyup="search()" placeholder="Tìm kiếm">
+				<button class="w3-btn search-bar-button w3-right" type="submit">
+				<!-- <img src="img/search.png" width="39px" height="30px" class="w3-centered" > -->
+				<i class="fa fa-search"></i>
+				</button>
+			</form>
+		<!-- SEARCH RESULT -->
+		<div id="display" class="w3-white w3-card-2 search-result" stype="display:none"></div>
+		</li>
+		<li  id="boxmember" class="w3-hide-small w3-dropdown-hover w3-right">
+			<a href="#" rel="nofollow">
+				<i class="fa fa-users"></i>
+				Thành viên
+			</a>
+			<div class="w3-dropdown-content w3-card-2 navbar-dropdown">
+				<a href="#" rel="nofollow" onclick="openModal('login')"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+				<a href="http://webtruyen.com/dang-ky/" title="đăng ký"><i class="fa fa-pencil-square-o"></i> Đăng Ký</a>
+			</div>
+		</li>
+	</ul>
+	<!-- RESPOBSIVE NAV -->
+	<div id="nav" class="w3-hide w3-hide-large w3-hide-medium">
+		<ul class="w3-navbar w3-left-align w3-large">
+			<li class="nav-search">
+				<form class="nav-search-bar" role="search" method="get" action="http://webtruyen.com/home/action_search1">
+				<input class="w3-input w3-border" type="text" id="key1" name="key1" placeholder="Tìm truyện, tác giả...">
+				<button class="w3-btn w3-grey w3-round">
+				<i class="fa fa-search"></i></button></form>
+			</li>
+			<li id="boxmember">
+				<a href="#" title="Menu thành viên" rel="nofollow">
+					Thành viên
+					<i class="fa fa-angle-down w3-right" style="font-size: 22px;"></i>
+				</a>
+				<div class="w3-row nav-content">
+					<a href="http://webtruyen.com/dang-nhap" title="Đăng nhập" class="w3-col s6">
+						<i class="fa fa-sign-in"></i>
+						Đăng nhập
+					</a>
+					<a class="w3-col s6" title="Đăng ký" href="http://webtruyen.com/dang-ky/">
+					<i class="fa fa-pencil-square-o"></i>
+					 	Đăng Ký
+					</a>
+				</div>
+			</li>
+			<li >
+				<a href="javascript:void();" title="MENU thể loại" rel="nofollow">
+					Thể Loại
+					<i class="fa fa-angle-down w3-right" style="font-size: 22px;"></i>
+				</a>
+				<div class="w3-row nav-content">
+					<a class="w3-col s6" title="Truyện tiên hiệp" href="http://webtruyen.com/tien-hiep/">
+					<i class="fa fa-tags"></i> Tiên Hiệp</a>
+					<a class="w3-col s6" title="Truyện kiếm hiệp" href="http://webtruyen.com/kiem-hiep/">
+					<i class="fa fa-tags"></i> Kiếm Hiệp</a>
+					<a class="w3-col s6" title="Truyện ngôn tình" href="http://webtruyen.com/ngon-tinh/">
+					<i class="fa fa-tags"></i> Ngôn Tình</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-teen/" title="Truyện teen">
+					<i class="fa fa-tags"></i> Truyện Teen</a>
+					<a class="w3-col s6" href="http://webtruyen.com/do-thi/" title="Truyện đô Thị">
+					<i class="fa fa-tags"></i> Đô Thị</a>
+					<a class="w3-col s6" href="http://webtruyen.com/quan-su/" title="Truyện quân sự">
+					<i class="fa fa-tags"></i> Quân Sự</a>
+					<a class="w3-col s6" href="http://webtruyen.com/lich-su/" title="Truyện lịch sử">
+					<i class="fa fa-tags"></i> Lịch Sử</a>
+					<a class="w3-col s6" href="http://webtruyen.com/xuyen-khong/" title="Truyện xuyên Không">
+					<i class="fa fa-tags"></i> Xuyên Không</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-ma/" title="Truyện ma">
+					<i class="fa fa-tags"></i> Truyện Ma</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-trinh-tham/" title="Truyện trinh thám">
+					<i class="fa fa-tags"></i> Trinh Thám</a>
+					<a class="w3-col s6" href="http://webtruyen.com/huyen-huyen/" title="Truyện huyền Huyễn">
+					<i class="fa fa-tags"></i> Huyền Huyễn</a>
+					<a class="w3-col s6" href="http://webtruyen.com/khoa-huyen/" title="Truyện khoa Huyễn">
+					<i class="fa fa-tags"></i> Khoa Huyễn</a>
+					<a class="w3-col s6" href="http://webtruyen.com/di-gioi/" title="Truyện dị Giới">
+					<i class="fa fa-tags"></i> Dị Giới</a>
+					<a class="w3-col s6" href="http://webtruyen.com/vong-du/" title="Truyện võng Du">
+					<i class="fa fa-tags"></i> Võng Du</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-ngan/" title="Truyện Ngắn">
+					<i class="fa fa-tags"></i> Truyện Ngắn</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-cuoi/" title="Truyện Cười">
+					<i class="fa fa-tags"></i> Truyện Cười</a>
+					<a class="w3-col s6" href="http://webtruyen.com/tieu-thuyet/" title="Truyện Tiểu Thuyết">
+					<i class="fa fa-tags"></i> Tiểu Thuyết</a>
+				</div>
+			</li>
+			<li>
+				<a title="Menu sắp sếp" rel="nofollow" href="javascript:void(0);">
+					Sắp Xếp
+				 <i class="fa fa-angle-down w3-right" style="font-size: 22px;"></i></a>
+				<div class="w3-row nav-content">
+					<a class="w3-col s6" href="http://webtruyen.com/all/" title="Truyện Mới Cập Nhật">
+					<i class="fa fa-refresh"></i> Mới Cập Nhật</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-moi-dang/" title="Truyện mới Đăng">
+					<i class="fa fa-cloud-upload"></i> Mới Đăng</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-duoc-xem-nhieu-nhat/" title="Truyện đọc nhiều"><i class="fa fa-eye"></i> Xem Nhiều</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-duoc-yeu-thich-nhat/" title="Truyện được yêu thích"><i class="fa fa-thumbs-o-up"></i> Yêu Thích</a>
+					<a class="w3-col s6" href="http://webtruyen.com/truyen-full/" title="Truyện Full"><i class="fa fa-signal"></i> Truyện Full</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- LOGIN MODAL -->
+	<div id="login" class="w3-modal w3-round">
+		<div class="w3-modal-content w3-card-4 w3-animate-zoom modal-login">
+			<div class="w3-center modal-title">
+				<span onclick="closeModal('login')" class="w3-closebtn" style="margin-right: 10px;">
+					<i class="fa fa-close"></i>
+				</span>
+				<p><b>Thành viên</b></p>
+			</div>
+			<div class="w3-container modal-content">
+				<form name="frmlogin" id="frmlogin" action="http://webtruyen.com/dang-nhap/" method="post" enctype="multipart-formdata">
+				<input class="w3-input w3-border w3-margin-bottom" type="text" name="email" id="email" placeholder="Email">
+				<input class="w3-input w3-border w3-margin-bottom" type="password" name="password" id="password" placeholder="Mật khẩu">
+				<button class="w3-btn w3-btn-block w3-green" type="submit" name="login">Đăng Nhập</button><!--<input class="w3-check" type="checkbox" checked="checked"> Ghi nhớ | -->
+				<a title="Quên mật khẩu" href="http://webtruyen.com/quen-mat-khau/">Quên mật khẩu?</a></form>
+				<div class="w3-row w3-center" style="margin: 8px 0;">
+				 <a class="w3-btn w3-btn-block w3-indigo w3-round" id="facebook" title="Đăng nhập với facebook" href="http://webtruyen.com/dang-nhap/">
+				 <i class="fa fa-facebook-f"></i> Đăng nhập với Facebook</a>
+				 </div>
+			</div>
+			<div class="w3-border-top w3-center w3-padding w3-light-grey">
+			<span>Chưa có tài khoản? </span>
+			<a title="đăng ký thành viên" href="http://webtruyen.com/dang-ky/">
+			<b>Đăng Ký</b></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="main" class="w3-row">
+		<!-- LIST -->
+		<div id="list" class="w3-col s12 m12 18 main w3-container">
+		<!-- LIST HOT -->
+		<div class="list-hot">
+			<div class="list-title">
+				<h2>
+					TRUYỆN ĐỀ CỬ
+					<i class="fa fa-angle-right"></i>
+				</h2>
+			</div>
+			<div class="w3-row w3-content w3-display-container">
+				<div class="w3-col s12 m12 112 slides" style="display: block;" >
+					<div class="w3-col s6 m4 l4"> <span class="hot-label"></span>
+					<a class="w3-hover-opacity" title="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc" href="http://webtruyen.com/me-17-tuoi-con-trai-thien-tai-cha-phuc-hac/">
+					<img width="214" height="260" class="slides-img" src="http://webtruyen.com/public/images/medium/me17tuoicontraithientaichaphuchacqVVbjiTU1r.jpg" alt="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc"></a>
+					<div class="slides-caption">
+					<h3><a href="http://webtruyen.com/me-17-tuoi-con-trai-thien-tai-cha-phuc-hac/" title="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc">Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc</a></h3>
+					<p class="slides-chapter">Chương 2115</p>
+					</div>
+					<span class="slides-view"><i class="fa fa-eye"></i> 2187634</span>
+					</div>
+					<div class="w3-col s6 m4 l4">
+					 <span class="hot-label"></span>
+					 <a class="w3-hover-opacity" title="Nữ Nhân Sau Lưng Đế Quốc Thiên Tài Tiểu Vương Phi" href="http://webtruyen.com/nu-nhan-sau-lung-de-quoc-thien-tai-tieu-vuong-phi/">
+					 <img width="214" height="260" class="slides-img" src="http://webtruyen.com/public/images/medium/nunhansaulungdequocthientaitieuvuongphi8xjxJDf5PI.jpg" alt="Nữ Nhân Sau Lưng Đế Quốc Thiên Tài Tiểu Vương Phi"></a>
+					 <div class="slides-caption">
+					 <h3><a href="http://webtruyen.com/nu-nhan-sau-lung-de-quoc-thien-tai-tieu-vuong-phi/" title="Nữ Nhân Sau Lưng Đế Quốc Thiên Tài Tiểu Vương Phi">Nữ Nhân Sau Lưng Đế Quốc Thiên Tài Tiểu Vương Phi</a></h3>
+					 <p class="slides-chapter">Quyển 4 - Chương 2156</p>
+					 </div>
+					 <span class="slides-view"><i class="fa fa-eye"></i> 3990109</span>
+					 </div>
+					 <div class="w3-col s6 m4 l4 w3-hide-small">
+					  <span class="hot-label"></span>
+					  <a class="w3-hover-opacity" title="Đại Chúa Tể" href="http://webtruyen.com/dai-chua-te/">
+					  <img width="214" height="260" class="slides-img" src="http://webtruyen.com/public/images/medium/daichuateFjfphmK9Ra.jpg" alt="Đại Chúa Tể"></a>
+					  <div class="slides-caption">
+					  <h3><a href="http://webtruyen.com/dai-chua-te/" title="Đại Chúa Tể">Đại Chúa Tể</a></h3>
+					  <p class="slides-chapter">Chương 1519</p>
+					  </div>
+					  <span class="slides-view"><i class="fa fa-eye"></i> 2155431</span>
+					  </div>
+				</div>
+			</div>
+			
+
+		</div>
+			<!-- LIST UPDATE NEW -->
+			<div class="list-update">
+				<div class="w3-row list-title">
+					<div class="title-left"><h2><a href="http://webtruyen.com/all/" title="TRUYỆN MỚI CẬP NHẬT">TRUYỆN MỚI CẬP NHẬT 
+					<i class="fa fa-angle-right"></i></a></h2>
+					</div>
+					<div class="title-right">
+					<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/all/','tien-hiep')">Tiên Hiệp</button>
+					<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/all/','kiem-hiep')">Kiếm Hiệp</button>
+					<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/all/','ngon-tinh')">Ngôn Tình
+					</button>
+					<select class="w3-grey w3-hover-white" id="category_1" onchange="go_search_by_cate('/searching/all/lastupdate/all/','category_1')" style="width: 65px; float: right;margin-left: 4px;">
+					<option value="" selected="" disabled="">Khác</option>
+					<option value="truyen-teen">Truyện Teen</option>
+					<option value="do-thi">Đô Thị</option>
+					<option value="lich-su">Lịch Sử</option>
+					<option value="xuyen-khong">Xuyên Không</option>
+					<option value="quan-su">Quân Sự</option>
+					<option value="truyen-ma">Truyện Ma</option>
+					<option value="trinh-tham">Trinh Thám</option>
+					<option value="vong-du">Võng Du</option>
+					<option value="huyen-huyen">Huyền Huyễn</option>
+					<option value="khoa-huyen">Khoa Huyễn</option>
+					<option value="di-gioi">Dị Giới</option>
+					<option value="tieu-thuyet">Tiểu Thuyết</option>
+					</select>
+					</div>
+				</div>
+				<div class="w3-row list-content">
+					<div class="w3-col s6 m3 l3 list">
+					<a class="w3-hover-opacity" href="http://webtruyen.com/trung-sinh-cao-mon-dich-nu/" title="Trùng Sinh Cao Môn Đích Nữ">
+					<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/trungsinhcaomondichnuMRHtY9f6lt.jpg" alt="Trùng Sinh Cao Môn Đích Nữ"></a>
+					<div class="list-caption">
+					<h3><a href="http://webtruyen.com/trung-sinh-cao-mon-dich-nu/" title="Trùng Sinh Cao Môn Đích Nữ">Trùng Sinh Cao Môn Đích Nữ</a></h3>
+					<span class="caption-view"><i class="fa fa-eye"></i> 35010</span><p class="caption-chapter">Chương 176</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list">
+					<a class="w3-hover-opacity" href="http://webtruyen.com/dung-nen-gap-lai/" title="Đừng Nên Gặp Lại">
+					<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/dungnengaplai34eGiJoL1o.jpg" alt="Đừng Nên Gặp Lại"></a>
+					<div class="list-caption">
+					<h3><a href="http://webtruyen.com/dung-nen-gap-lai/" title="Đừng Nên Gặp Lại">Đừng Nên Gặp Lại</a></h3><span class="caption-view">
+					<i class="fa fa-eye"></i> 1680</span>
+					<p class="caption-chapter">Chương 30</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list">
+					<a class="w3-hover-opacity" href="http://webtruyen.com/tinh-nhan-lam-am-giuong-cua-tong-giam-doc/" title="Tình Nhân Làm Ấm Giường Của Tổng Giám Đốc">
+					<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/tinhnhanlamamgiuongcuatonggiamdocYPWW8eSnvT.jpg" alt="Tình Nhân Làm Ấm Giường Của Tổng Giám Đốc"></a>
+					<div class="list-caption"><h3><a href="http://webtruyen.com/tinh-nhan-lam-am-giuong-cua-tong-giam-doc/" title="Tình Nhân Làm Ấm Giường Của Tổng Giám Đốc">Tình Nhân Làm Ấm Giường Của Tổng Giám Đốc</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 64506</span><p class="caption-chapter">Chương 40</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/mat-the-trung-sinh-chi-nu-vuong-tro-ve/" title="Mạt Thế Trùng Sinh Chi Nữ Vương Trở Về"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/matthetrungsinhchinuvuongtroveClilTwK3tT.jpg" alt="Mạt Thế Trùng Sinh Chi Nữ Vương Trở Về"></a><div class="list-caption"><h3><a href="http://webtruyen.com/mat-the-trung-sinh-chi-nu-vuong-tro-ve/" title="Mạt Thế Trùng Sinh Chi Nữ Vương Trở Về">Mạt Thế Trùng Sinh Chi Nữ Vương Trở Về</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 450</span><p class="caption-chapter">Chương 56</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/ta-la-mot-nu-phu-tot-dep-nu-chinh-dung-den-gan/" title="Ta Là Một Nữ Phụ Tốt Đẹp, Nữ Chính Đừng Đến Gần!"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/talamotnuphutotdepnuchinhdungdenganW2Gl1uefvE.jpg" alt="Ta Là Một Nữ Phụ Tốt Đẹp, Nữ Chính Đừng Đến Gần!"></a><div class="list-caption"><h3><a href="http://webtruyen.com/ta-la-mot-nu-phu-tot-dep-nu-chinh-dung-den-gan/" title="Ta Là Một Nữ Phụ Tốt Đẹp, Nữ Chính Đừng Đến Gần!">Ta Là Một Nữ Phụ Tốt Đẹp, Nữ Chính Đừng Đến Gần!</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 73139</span><p class="caption-chapter">Chương 31</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/kho-lam-thai-tu-phi/" title="Khó Làm Thái Tử Phi"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/kholamthaituphiqGNreW2lAH.jpg" alt="Khó Làm Thái Tử Phi"></a><div class="list-caption"><h3><a href="http://webtruyen.com/kho-lam-thai-tu-phi/" title="Khó Làm Thái Tử Phi">Khó Làm Thái Tử Phi</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 5000</span><p class="caption-chapter">Chương 63</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list"><span class="hot-label"></span><a class="w3-hover-opacity" href="http://webtruyen.com/me-17-tuoi-con-trai-thien-tai-cha-phuc-hac/" title="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/me17tuoicontraithientaichaphuchacqVVbjiTU1r.jpg" alt="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc"></a><div class="list-caption"><h3><a href="http://webtruyen.com/me-17-tuoi-con-trai-thien-tai-cha-phuc-hac/" title="Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc">Mẹ 17 Tuổi: Con Trai Thiên Tài Cha Phúc Hắc</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 2187684</span><p class="caption-chapter">Chương 2115</p>
+					</div>
+					</div>
+					<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/co-gai-nho-map-map-trong-sinh/" title="Cô Gái Nhỏ Mập Mạp Trọng Sinh"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/cogainhomapmaptrongsinhH8N9cGZYE3.jpg" alt="Cô Gái Nhỏ Mập Mạp Trọng Sinh"></a><div class="list-caption"><h3><a href="http://webtruyen.com/co-gai-nho-map-map-trong-sinh/" title="Cô Gái Nhỏ Mập Mạp Trọng Sinh">Cô Gái Nhỏ Mập Mạp Trọng Sinh</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 29933</span><p class="caption-chapter">Chương 48</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- LIST FULL -->
+			<div class="list-update">
+				<div class="w3-row list-title">
+					<div class="title-left">
+						<h2>
+							<a href="http://webtruyen.com/truyen-full" title="">
+								ĐỌC TRUYỆN FULL
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</h2>
+					</div>
+					<div class="title-right">
+						<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/end/','tien-hiep')">Tiên Hiệp
+						</button>
+						<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/end/','kiem-hiep')">Kiếm Hiệp
+						</button>
+						<button class="w3-btn w3-round-xlarge w3-grey w3-hover-blue" onclick="button_go_search_by_cate('/searching/all/lastupdate/end/','ngon-tinh')">Ngôn Tình
+						</button>
+						<select class="w3-grey w3-hover-white" id="category_3" onchange="go_search_by_cate('/searching/all/lastupdate/end/','category_3')" style="width: 65px; float: right;margin-left: 4px;">
+						<option value="" selected="" disabled="">Khác</option>
+						<option value="truyen-teen">Truyện Teen</option>
+						<option value="do-thi">Đô Thị</option>
+						<option value="lich-su">Lịch Sử</option>
+						<option value="xuyen-khong">Xuyên Không</option>
+						<option value="quan-su">Quân Sự</option>
+						<option value="truyen-ma">Truyện Ma</option>
+						<option value="trinh-tham">Trinh Thám</option>
+						<option value="vong-du">Võng Du</option>
+						<option value="huyen-huyen">Huyền Huyễn</option>
+						<option value="khoa-huyen">Khoa Huyễn</option>
+						<option value="di-gioi">Dị Giới</option>
+						<option value="tieu-thuyet">Tiểu Thuyết</option>
+						</select>
+					</div>
+				</div>
+				<div class="w3-row list-content">
+				<div class="w3-col s6 m3 l3 list">
+				<a class="w3-hover-opacity" href="http://webtruyen.com/trung-sinh-chi-nha-noi/" title="Trùng Sinh Chi Nha Nội">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/trungsinhchinhanoiugVm9HNVwJ.jpg" alt="Trùng Sinh Chi Nha Nội"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/trung-sinh-chi-nha-noi/" title="Trùng Sinh Chi Nha Nội">Trùng Sinh Chi Nha Nội</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 14440</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list">
+				<span class="hot-label"></span>
+				<a class="w3-hover-opacity" href="http://webtruyen.com/the-gioi-hoan-my/" title="Thế Giới Hoàn Mỹ">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/thegioihoanmyvU8lvfoSwb.jpg" alt="Thế Giới Hoàn Mỹ"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/the-gioi-hoan-my/" title="Thế Giới Hoàn Mỹ">Thế Giới Hoàn Mỹ</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 1602286</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list">
+				<a class="w3-hover-opacity" href="http://webtruyen.com/co-vo-gia-mao-rat-than-bi/" title="Cô Vợ Giả Mạo Rất Thần Bí">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/covogiamaoratthanbi9PNhbGcJl6.jpg" alt="Cô Vợ Giả Mạo Rất Thần Bí"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/co-vo-gia-mao-rat-than-bi/" title="Cô Vợ Giả Mạo Rất Thần Bí">Cô Vợ Giả Mạo Rất Thần Bí</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 1007078</span><p class="caption-chapter">FULL
+				</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/duong-thanh-nu-vuong/" title="Dưỡng Thành Nữ Vương">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/duongthanhnuvuongRT55dhmylH.jpg" alt="Dưỡng Thành Nữ Vương"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/duong-thanh-nu-vuong/" title="Dưỡng Thành Nữ Vương">Dưỡng Thành Nữ Vương</a></h3>
+				<span class="caption-view">
+				<i class="fa fa-eye"></i> 520</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list">
+				<a class="w3-hover-opacity" href="http://webtruyen.com/nay-co-hau-lam-vo-anh-nhe/" title="Này Cô Hầu, Làm Vợ Anh Nhé!">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/naycohaulamvoanhnhesGAFJgaIFB.jpg" alt="Này Cô Hầu, Làm Vợ Anh Nhé!"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/nay-co-hau-lam-vo-anh-nhe/" title="Này Cô Hầu, Làm Vợ Anh Nhé!">Này Cô Hầu, Làm Vợ Anh Nhé!</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 56360</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list">
+				<a class="w3-hover-opacity" href="http://webtruyen.com/toi-se-khien-anh-phai-to-tinh-voi-toi/" title="Tôi Sẽ Khiến Anh Phải Tỏ Tình Với Tôi">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/toisekhienanhphaitotinhvoitoiWMaUHGBdLK.jpg" alt="Tôi Sẽ Khiến Anh Phải Tỏ Tình Với Tôi"></a>
+				<div class="list-caption">
+				<h3>
+				<a href="http://webtruyen.com/toi-se-khien-anh-phai-to-tinh-voi-toi/" title="Tôi Sẽ Khiến Anh Phải Tỏ Tình Với Tôi">Tôi Sẽ Khiến Anh Phải Tỏ Tình Với Tôi</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 16310</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/mong-anh-hung-cua-mot-thieu-nien-binh-thuong/" title="Mộng Anh Hùng Của Một Thiếu Niên Bình Thường">
+				<img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/monganhhungcuamotthieunienbinhthuonghNKdbquaWe.jpg" alt="Mộng Anh Hùng Của Một Thiếu Niên Bình Thường"></a>
+				<div class="list-caption"><h3><a href="http://webtruyen.com/mong-anh-hung-cua-mot-thieu-nien-binh-thuong/" title="Mộng Anh Hùng Của Một Thiếu Niên Bình Thường">Mộng Anh Hùng Của Một Thiếu Niên Bình Thường</a></h3>
+				<span class="caption-view"><i class="fa fa-eye"></i> 70</span><p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				<div class="w3-col s6 m3 l3 list"><a class="w3-hover-opacity" href="http://webtruyen.com/quyen-tai/" title="Quyền Tài"><img width="157" height="208" class="list-thumbnail" src="http://webtruyen.com/public/images/medium/quyentaiBCVibmT582.jpg" alt="Quyền Tài"></a>
+				<div class="list-caption"><h3><a href="http://webtruyen.com/quyen-tai/" title="Quyền Tài">Quyền Tài
+				</a></h3><span class="caption-view"><i class="fa fa-eye"></i> 339545</span>
+				<p class="caption-chapter">FULL</p>
+				</div>
+				</div>
+				</div>
+			</div>
+			<!-- SHORTSTORY -->
+			<div class="w3-margin-top list-shortstory">
+				<div class="list-title">
+					<h2>
+					<a href="http://webtruyen.com/truyen-ngan/">ĐỌC TRUYỆN NGẮN
+					 <i class="fa fa-angle-right"></i>
+					</a>
+					</h2>
+				</div>
+				<div class="w3-row list-content">
+				<div class="w3-col s12 m6 l6 w3-display-container list-left">
+				 <a href="http://webtruyen.com/truyen-ngan/khi-dau-long-nhat-nguoi-ta-chi-im-lang/" title="Khi Đau Lòng Nhất, Người Ta Chỉ Im Lặng...">
+				  <img width="345" height="213" alt="Khi Đau Lòng Nhất, Người Ta Chỉ Im Lặng..." class="w3-hover-opacity" src="http://webtruyen.com/public/images/aasskhidaulongnhatnguoitachiimlangX4e4QDYuDy.jpg"></a>
+				   <h3 class="w3-display-bottommiddle list-left-title">
+				   <a href="http://webtruyen.com/truyen-ngan/khi-dau-long-nhat-nguoi-ta-chi-im-lang/" title="Khi Đau Lòng Nhất, Người Ta Chỉ Im Lặng...">"Khi Đau Lòng Nhất, Người Ta Chỉ Im Lặng..."</a></h3>
+				  </div>
+				  <div class="w3-col s12 m6 l6 w3-container list-right">
+				  <div class="w3-row">
+				  <div class="w3-col s3 m3 l3 list-right-thumbnail">
+				  <a href="http://webtruyen.com/truyen-ngan/the-la-chung-ta-da-that-su-chia-tay/" title="Thế Là Chúng Ta Đã Thật Sự Chia Tay...">
+				  <img width="81" height="47" alt="Thế Là Chúng Ta Đã Thật Sự Chia Tay..." class="w3-hover-opacity" src="http://webtruyen.com/public/images/small/aassthelachungtadathatsuchiataymEbaHtihbX.jpg"></a>
+				  </div>
+				  <div class="w3-col s9 m9 l9 list-right-title">
+				   <h3><a href="http://webtruyen.com/truyen-ngan/the-la-chung-ta-da-that-su-chia-tay/" title="Thế Là Chúng Ta Đã Thật Sự Chia Tay...">Thế Là Chúng Ta Đã Thật Sự Chia Tay...</a></h3>
+				   </div>
+				   </div>
+				   <div class="w3-row">
+				   <div class="w3-col s3 m3 l3 list-right-thumbnail">
+				   <a href="http://webtruyen.com/truyen-ngan/yeu-nhau-la-mot-chuyen-den-duoc-voi-nhau-hay-khong-lai-la-mot-chuyen-khac/" title="Yêu Nhau Là Một Chuyện, Đến Được Với Nhau Hay Không Lại Là Một Chuyện Khác!">
+				   <img width="81" height="47" alt="Yêu Nhau Là Một Chuyện, Đến Được Với Nhau Hay Không Lại Là Một Chuyện Khác!" class="w3-hover-opacity" src="http://webtruyen.com/public/images/small/aassyeunhaulamotchuyendenduocvoinhauhaykhonglailamotchuyenkhaclcWvgYPtij.jpg"></a>
+				   </div>
+				   <div class="w3-col s9 m9 l9 list-right-title">
+				    <h3>
+				    <a href="http://webtruyen.com/truyen-ngan/yeu-nhau-la-mot-chuyen-den-duoc-voi-nhau-hay-khong-lai-la-mot-chuyen-khac/" title="Yêu Nhau Là Một Chuyện, Đến Được Với Nhau Hay Không Lại Là Một Chuyện Khác!">Yêu Nhau Là Một Chuyện, Đến Được Với Nhau Hay Không Lại Là Một Chuyện Khác!</a></h3>
+				    </div>
+				    </div>
+				    <div class="w3-row">
+				    <div class="w3-col s3 m3 l3 list-right-thumbnail">
+				    <a href="http://webtruyen.com/truyen-ngan/tai-sao-phai-duy-tri-mot-moi-quan-he-ma-ca-hai-thua-biet-la-se-khong-di-den-dau/" title="Tại Sao Phải Duy Trì Một Mối Quan Hệ Mà Cả Hai Thừa Biết Là Sẽ Không Đi Đến Đâu?">
+				    <img width="81" height="47" alt="Tại Sao Phải Duy Trì Một Mối Quan Hệ Mà Cả Hai Thừa Biết Là Sẽ Không Đi Đến Đâu?" class="w3-hover-opacity" src="http://webtruyen.com/public/images/small/aasstaisaophaiduytrimotmoiquanhemacahaithuabietlasekhongdidendau1kL8RqHfoY.png"></a>
+				    </div>
+				    <div class="w3-col s9 m9 l9 list-right-title">
+				     <h3><a href="http://webtruyen.com/truyen-ngan/tai-sao-phai-duy-tri-mot-moi-quan-he-ma-ca-hai-thua-biet-la-se-khong-di-den-dau/" title="Tại Sao Phải Duy Trì Một Mối Quan Hệ Mà Cả Hai Thừa Biết Là Sẽ Không Đi Đến Đâu?">Tại Sao Phải Duy Trì Một Mối Quan Hệ Mà Cả Hai Thừa Biết Là Sẽ Không Đi Đến Đâu?</a></h3>
+				     </div>
+				     </div>
+				     <div class="w3-row">
+				     <div class="w3-col s3 m3 l3 list-right-thumbnail">
+				     <a href="http://webtruyen.com/truyen-ngan/chia-tay-roi-thi-nen-doan-tuyet-lam-ban-thi-cung-bang-thua/" title="Chia Tay Rồi Thì Nên Đoạn Tuyệt, Làm Bạn Thì Cũng Bằng Thừa...">
+				     <img width="81" height="47" alt="Chia Tay Rồi Thì Nên Đoạn Tuyệt, Làm Bạn Thì Cũng Bằng Thừa..." class="w3-hover-opacity" src="http://webtruyen.com/public/images/small/aasschiatayroithinendoantuyetlambanthicungbangthuaV43QC3tn26.jpg"></a>
+				     </div>
+				     <div class="w3-col s9 m9 l9 list-right-title"> <h3><a href="http://webtruyen.com/truyen-ngan/chia-tay-roi-thi-nen-doan-tuyet-lam-ban-thi-cung-bang-thua/" title="Chia Tay Rồi Thì Nên Đoạn Tuyệt, Làm Bạn Thì Cũng Bằng Thừa...">Chia Tay Rồi Thì Nên Đoạn Tuyệt, Làm Bạn Thì Cũng Bằng Thừa...</a></h3>
+				     </div>
+				     </div>
+				     </div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div id="sidebar" class="w3-col s12 m12 14 sidebar w3-container">
+			<div class="w3-row">
+				<!-- CATEGORY -->
+				<div class="w3-col s12 m12 112 sidebar-list sidebar-category">
+					<div class="sidebar-title">
+					<h2>THỂ LOẠI TRUYỆN 
+					<i class="fa fa-angle-right"></i>
+					</h2>
+					</div>
+					<div class="sidebar-content">
+					<ul class="w3-ul w3-row">
+					<li class="w3-col s6 m6 l6">
+					<i class="fa fa-diamond w3-text-red"></i>
+					 <b>
+					 <a class="w3-text-red" title="Tiên hiệp" href="http://webtruyen.com/tien-hiep/">Tiên Hiệp
+					 </a></b>
+					 </li>
+					 <li class="w3-col s6 m6 l6">
+					 <i class="fa fa-diamond w3-text-red"></i>
+					  <b><a class="w3-text-red" title="Kiếm hiệp" href="http://webtruyen.com/kiem-hiep/">Kiếm Hiệp
+					  </a></b>
+					  </li>
+					  <li class="w3-col s6 m6 l6">
+					  <i class="fa fa-diamond w3-text-red"></i>
+					   <b><a class="w3-text-red" href="http://webtruyen.com/truyen-teen/" title="Truyện Tuổi Teen">Truyện Teen</a></b>
+					   </li>
+					   <li class="w3-col s6 m6 l6">
+					   <i class="fa fa-diamond w3-text-red"></i>
+					    <b><a class="w3-text-red" title="Ngôn tình" href="http://webtruyen.com/ngon-tinh/">Ngôn Tình</a></b>
+					    </li>
+					    <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					     <a href="http://webtruyen.com/do-thi/" title="Đô Thị">Đô Thị</a>
+					     </li>
+					     <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					      <a href="http://webtruyen.com/lich-su/" title="Lịch sử">Lịch Sử</a>
+					      </li>
+					      <li class="w3-col s6 m6 l6">
+					      <i class="fa fa-tags"></i>
+					       <a href="http://webtruyen.com/xuyen-khong/" title="Xuyên Không">Xuyên Không</a>
+					       </li>
+					       <li class="w3-col s6 m6 l6">
+					       <i class="fa fa-tags"></i>
+					        <a href="http://webtruyen.com/quan-su/" title="Quân sự">Quân Sự</a>
+					        </li>
+					        <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					         <a href="http://webtruyen.com/truyen-ma/" title="Truyện ma">Truyện Ma</a>
+					         </li>
+					         <li class="w3-col s6 m6 l6">
+					         <i class="fa fa-tags"></i>
+					          <a href="http://webtruyen.com/truyen-trinh-tham/" title="Truyện trinh thám">Trinh Thám</a></li>
+					          <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					           <a href="http://webtruyen.com/truyen-ngan/" title="Truyện Ngắn">Truyện Ngắn</a>
+					           </li>
+					           <li class="w3-col s6 m6 l6">
+					           <i class="fa fa-tags"></i>
+					            <a href="http://webtruyen.com/truyen-cuoi/" title="Truyện Cười">Truyện Cười</a>
+					            </li>
+					            <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					             <a href="http://webtruyen.com/vong-du/" title="Võng Du">Võng Du</a>
+					             </li>
+					             <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					              <a href="http://webtruyen.com/huyen-huyen/" title="Huyền Huyễn">
+					              Huyền Huyễn</a>
+					              </li>
+					              <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					               <a href="http://webtruyen.com/khoa-huyen/" title="Khoa Huyễn">Khoa Huyễn</a>
+					               </li>
+					               <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					                <a href="http://webtruyen.com/di-gioi/" title="Dị Giới">Dị Giới</a>
+					                </li>
+					                <li class="w3-col s6 m6 l6"><i class="fa fa-tags"></i>
+					                 <a href="http://webtruyen.com/tieu-thuyet/" title="Truyện Tiểu Thuyết">Tiểu Thuyết</a>
+					                 </li>
+					                 <li class="w3-col s6 m6 l6">
+					                 <i class="fa fa-diamond w3-text-red"></i>
+					                  <b>
+					                  <a class="w3-text-red" title="Truyện FULL" href="http://webtruyen.com/truyen-full/">Truyện FULL</a></b>
+					                  </li>
+					                  </ul>
+					                  </div>
+				</div>
+				<!-- TOP STORY-->
+				<div class="w3-col s12 m12 l12 sidebar-list sidebar-top">
+				<div class="w3-row sidebar-title">
+				<div class="w3-col s8 m8 l8 title-left">
+				<h2>TRUYỆN HOT <i class="fa fa-angle-right"></i></h2>
+				</div>
+				<div class="w3-col s4 m4 l4 w3-right-align title-right">
+				<select class="w3-grey w3-hover-white" style="width: 85px;" id="category_99" onchange="go_search_by_cate('/searching/all/rating/all/','category_99')">
+				<option value="" selected="" disabled="">Thể loại</option>
+				<option value="tien-hiep">Tiên Hiệp</option>
+				<option value="kiem-hiep">Kiếm Hiệp</option>
+				<option value="ngon-tinh">Ngôn Tình</option>
+				<option value="truyen-teen">Truyện Teen</option>
+				<option value="do-thi">Đô Thị</option>
+				<option value="lich-su">Lịch Sử</option>
+				<option value="xuyen-khong">Xuyên Không</option>
+				<option value="quan-su">Quân Sự</option>
+				<option value="truyen-ma">Truyện Ma</option>
+				<option value="trinh-tham">Trinh Thám</option>
+				<option value="vong-du">Võng Du</option>
+				<option value="huyen-huyen">Huyền Huyễn</option>
+				<option value="khoa-huyen">Khoa Huyễn</option>
+				<option value="di-gioi">Dị Giới</option>
+				</select>
+				</div>
+				</div>
+				<div class="sidebar-content">
+				<ul class="w3-ul w3-round">
+				 <li>
+				 <span class="w3-btn-floating w3-left w3-margin-right w3-red">1</span>
+				 <h3>
+				 <a title="Hôn Trộm 55 Lần" href="http://webtruyen.com/hon-trom-55-lan/">Hôn Trộm 55 Lần</a>
+				 </h3>
+				 <span class="sidebar-caption">
+				 <i class="fa fa-eye"></i> 13026374</span>
+				 </li>
+				  <li>
+				  <span class="w3-btn-floating w3-left w3-margin-right w3-blue">2</span>
+				  <h3>
+				  <a title="Hợp Đồng Hôn Nhân 100 Ngày" href="http://webtruyen.com/hop-dong-hon-nhan-100-ngay/">Hợp Đồng Hôn Nhân 100 Ngày</a>
+				  </h3>
+				  <span class="sidebar-caption">
+				  <i class="fa fa-eye"></i> 7976546</span>
+				  </li>
+				   <li>
+				   <span class="w3-btn-floating w3-left w3-margin-right w3-green">3</span>
+				   <h3>
+				   <a title="Bảo Bối Của Tổng Giám Đốc" href="http://webtruyen.com/bao-boi-cua-tong-giam-doc/">Bảo Bối Của Tổng Giám Đốc</a>
+				   </h3>
+				   <span class="sidebar-caption">
+				   <i class="fa fa-eye"></i> 4230736</span></li>
+				    <li>
+				    <span class="w3-btn-floating w3-left w3-margin-right w3-grey">4</span>
+				    <h3>
+				    <a title="Cô Vợ Tổng Giám Đốc Xinh Đẹp Của Tôi" href="http://webtruyen.com/co-vo-tong-giam-doc-xinh-dep-cua-toi/">Cô Vợ Tổng Giám Đốc Xinh Đẹp Của Tôi</a>
+				    </h3>
+				    <span class="sidebar-caption">
+				    <i class="fa fa-eye"></i> 7817512</span></li>
+				     <li>
+				     <span class="w3-btn-floating w3-left w3-margin-right w3-grey">5</span>
+				     <h3>
+				     <a title="Ép Yêu 100 Ngày" href="http://webtruyen.com/ep-yeu-100-ngay/">Ép Yêu 100 Ngày</a></h3><span class="sidebar-caption"><i class="fa fa-eye"></i> 249240</span>
+				     </li>
+				      <li><span class="w3-btn-floating w3-left w3-margin-right w3-grey">6</span>
+				      <h3>
+				      <a title="Đạo Tình" href="http://webtruyen.com/dao-tinh/">Đạo Tình</a>
+				      </h3>
+				      <span class="sidebar-caption"><i class="fa fa-eye"></i> 2497174</span>
+				      </li>
+				       <li>
+				       <span class="w3-btn-floating w3-left w3-margin-right w3-grey">7</span>
+				       <h3>
+				       <a title="Phượng Nghịch Thiên Hạ" href="http://webtruyen.com/phuong-nghich-thien-ha/">Phượng Nghịch Thiên Hạ</a>
+				       </h3>
+				       <span class="sidebar-caption"><i class="fa fa-eye"></i> 3824153</span></li>
+				        <li><span class="w3-btn-floating w3-left w3-margin-right w3-grey">8</span>
+				        <h3>
+				        <a title="Mao Sơn Tróc Quỷ Nhân" href="http://webtruyen.com/mao-son-troc-quy-nhan/">Mao Sơn Tróc Quỷ Nhân</a>
+				        </h3>
+				        <span class="sidebar-caption"><i class="fa fa-eye"></i> 156653</span></li>
+				         <li>
+				         <span class="w3-btn-floating w3-left w3-margin-right w3-grey">9</span>
+				         <h3>
+				         <a title="Người Tình Nhỏ Bên Cạnh Tổng Giám Đốc" href="http://webtruyen.com/nguoi-tinh-nho-ben-canh-tong-giam-doc/">Người Tình Nhỏ Bên Cạnh Tổng Giám Đốc</a></h3>
+				         <span class="sidebar-caption"><i class="fa fa-eye"></i> 4643792</span>
+				         </li>
+				    <li><span class="w3-btn-floating w3-left w3-margin-right w3-grey">10</span>
+				   <h3>
+				   <a title="Y Thủ Che Thiên" href="http://webtruyen.com/y-thu-che-thien/">Y Thủ Che Thiên</a>
+				   </h3>
+				   <span class="sidebar-caption"><i class="fa fa-eye"></i> 4305476</span>
+				   </li>
+				    </ul>
+				   </div>
+				   </div>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<div id="footer" >
+		<div class="w3-row-padding copyright">
+			<div class="w3-col s12 m8 18 w3-justify">
+				<p>Website <a title="đọc truyện online" href="http://webtruyen.com/">đọc truyện</a> online chất lượng hàng đầu việt nam, với nhiều
+				 <a title="Truyện Tiên Hiệp" href="http://webtruyen.com/tien-hiep/">truyện tiên hiệp</a>, <a title="Truyện Kiếm Hiệp" href="http://webtruyen.com/kiem-hiep/">truyện kiếm hiệp</a>","
+				  <a title="truyen ngon tinh" href="http://webtruyen.com/ngon-tinh/">truyện ngôn tình</a>","
+				   <a title="truyen teen" href="http://webtruyen.com/truyen-teen/">truyện teen</a>","
+				    <a title="Truyện Đô Thị" href="http://webtruyen.com/do-thi/">truyện đô thị</a> "được chọn lọc và đăng tải một cách kĩ lưỡng.Mời bạn đọc và ủng hộ website bằng cách giới thiệu đến bạn bè, chúc bạn có những giây phút đọc truyện thư giãn thật bổ ích."
+				     <a href="https://plus.google.com/107266120972546881903?rel=author" rel="nofollow" target="_blank">Google</a><br><script src="dmca.png"></script>
+				     <a href="http://www.dmca.com/Protection/Status.aspx?ID=8474e935-28de-489e-a6dc-dc6e1d98563c&amp;refurl=http://webtruyen.com/#" title="DMCA.com Protection Program" class="dmca-badge" rel="nofollow" target="_blank">
+				      <img src="http://webtruyen.com/dmca.png" alt="DMCA.com Protection Status" width="109" height="22"></a></p>
+			</div>
+			<div class="w3-col s12 m4 w3-center">
+				<p>Copyright <i class="fa fa-copyright"></i> 2016
+				 <a title="http://webtruyen.com" href="http://webtruyen.com/">WebTruyen.Com</a><br>Kết nối với chúng tôi
+				 </p>
+				 <p><a class="w3-btn-floating w3-hover-opacity w3-indigo w3-margin-right" title="Fanpge của webtruyen.com" href="http://www.facebook.com/doctruyen.info"><i class="fa fa-facebook"></i></a>
+				 <a class="w3-btn-floating w3-hover-opacity w3-red" title="Google plus của webtruyen.com" href="https://plus.google.com/107266120972546881903/"><i class="fa fa-google-plus"></i></a>
+				 </p>
+			</div>
+		</div>
+		<div align="center">
+			"Liên kết hợp tác:"
+			<a href="http://yeutre.vn" title="Cộng đồng nuôi con văn minh" target="_blank">Yeutre.vn</a>
+			"- Cộng đồng nuôi con văn minh"
+		</div>
+	</div>
+	<!-- JAVASCRIP -->
+	<script type="text/javascript" src="myscrip.js"></script>
+	
+</body>
+</html>
